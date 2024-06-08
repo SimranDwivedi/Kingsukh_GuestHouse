@@ -3,9 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.logo a{
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+}
 .header-section{
     position: relative;
+}
+.guest-house{
+    font-size: 35px;
 }
 .header {
     
@@ -76,75 +83,73 @@
     margin: 0 auto;
     align-items: center;
     position:absolute;
-    top: 250%;
+    top: 93%;
     left: 20%;
 }
 .card7{
     height: 130px;
     width: 80%;
-
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
-    
-    justify-content: center;
+    justify-content: space-around;
     background-color:white;
     margin-top: -50px;
     align-items: bottom;
     border-radius: 12px;
     margin: 60px auto;
     align-items: center;
-    
 }
-.hundred b{
-    font-size: 40px;
-    margin-right: 300px;
+.card7 h2{
+    margin-bottom: 10px;
+}
+.card7 span{
+    font-size: 20px;
 }
 center{
     font-size: 20px;
 }
-.onefifty b{
-    font-size: 40px;
-    margin-left: 150px;
-}
-.onefifty span{
-    margin-left: 150px;
-}
+
 #about{
     display: flex;
-}
-.about{
-    margin-top: 700px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
     height: 600px;
-   margin-left: 70px;
-    display:flex;
-    width: 50%;
-    
+    gap: 50px;
 }
+
 h1{
     font-size: 40px;
 }
 .text{
-    margin-top: 700px;
-    margin-left:10px ;
-    width: 30%;
-    display:block;
+    width: 25%;
+}
+.text h4{
+    margin-bottom: 20px;
+}
+.text h2{
+    margin-bottom: 30px;
+    font-size: 40px;
 }
 .next2{
     color:#78716c;
     font-size: 20px;
-    
 }
-a{
+.next2 p{
+    margin-bottom: 20px;
+}
+.next2 a{
     text-decoration: none;
+}
+.about-btn{
+    margin-top: 30px;
 }
 .about img{
     border-radius: 5px;
-    margin-left:150px ;
 }
 .card-group{
     width: 50%;
     display: flex;
-
 }
 .card{
     margin: 30px 30px;
@@ -220,15 +225,17 @@ ul{
     font-size: 20px;
 }
 .main-banner{
-    height: 300px;
+    height: 800px;
     width: 100%;
     
     position: relative;
 }
-
+.hamburger{
+    display: none;
+}
 .banner-text{
     position: absolute;
-    top: 110%;
+    top: 45%;
     left: 30%;
     font-size: 40px;
     color: white;
@@ -268,7 +275,7 @@ ul{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;
 }
 .section1
 {
@@ -454,7 +461,8 @@ section1::before
 .footer {
   background-color: black;
   color: gray;
-  height: 600px;
+  height: 500px;
+  display: flex;
   
 }
 .footer_block{
@@ -469,6 +477,8 @@ section1::before
 .footer_container {
   display: flex;
   gap: 4rem 2rem;
+  margin: 0 auto;
+
 }
 
 .footer_block .section-text {
@@ -522,16 +532,156 @@ section1::before
   font-size: 0.9rem;
   color: gray;
   text-align: center;
+  background: black;
 }
 @media only screen and (max-width: 768px) and (min-width: 360px){
     .header-menu {
         display: none;
         
     }
+    .hamburger{
+        display:block;
+    }
+    .hame_menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .hame_menu a{
+        text-decoration: none;
+        padding: 10px 0;
+    }
+    .main-banner{
+        height: 300px;
+    }
+    .main-banner img{
+        height: 300px;
+    }
+    .banner-text{
+        top: 40%;
+        left: 20%;
+    }
+    .banner-text p{
+        font-size: 14px;
+    }
+    .banner-text h2{
+        font-size: 25px;
+    }
     .footer_container {
         flex-direction: column;
+        padding: 40px 0;
     }
     .container1{
         flex-direction:column;
+    }
+    .card1{
+        width: 90%;
+        top: 80%;
+        left: 5%;
+    }
+    .text{
+        width: 95%;
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    .about img{
+        margin-left: 0;
+    }
+    #about{
+        flex-direction: column;
+        margin-top: 100px;
+        height: auto;
+    }
+    .about{
+        margin-left: 0;
+    }
+    .next3{
+        font-size: 30px;
+    }
+    .gallery{
+        grid-template:
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px
+        "1fr 1fr" 200px;
+    }
+    .rooms{
+        margin-left: 0;
+        height: auto;
+    }
+    .card-group{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container1{
+        min-width: 400px;
+        display: block;
+    }
+    .section1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .container1 .contactInfo1{
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-bottom: 30px;
+    }
+    .container1 .contactForm1{
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        padding: 0;
+        position: relative;
+    }
+    .container1 .contactForm1 .formBox1{
+       flex-direction: column; 
+       padding: 20px;
+    }
+    .services{
+        display: block;
+        position: relative;
+    }
+    .services img{
+        height: 700px;
+    }
+    .services-text{
+        position: absolute;
+        top: 10%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+    .service-img-2{
+        display: none;
+    }
+    .card7{
+        width: 100%;
+    }
+    .hundred b{
+        margin-right: 0;
+    }
+    .onefifty b{
+        margin-left: 0;
+    }
+    .onefifty span{
+        margin-left: 0;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer_block{
+        margin-left: 0;
+        height: auto;
+        margin-top: 10px;
+    }
+    .header .book-now button{
+        display: none;
     }
 }
